@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Capture Forms</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); width: 50%; margin: auto; }
+        input, button { margin-top: 10px; padding: 10px; width: 90%; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #1abc9c; color: white; cursor: pointer; }
+        button:hover { background: #16a085; }
+        .back { margin-top: 20px; display: block; text-decoration: none; color: #2980b9; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lead Capture Form</h2>
+        <form>
+            <input type="text" placeholder="Enter Name" required><br>
+            <input type="email" placeholder="Enter Email" required><br>
+            <input type="tel" placeholder="Enter Phone Number" required><br>
+            <button type="submit">Submit Lead</button>
+        </form>
+        <a href="{% url 'dashboard' %}" class="back">Back to Dashboard</a>
+    </div>
+</body>
+</html>
